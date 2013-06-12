@@ -7,7 +7,7 @@ class SippcallController {
 			def sout = new StringBuffer(), serr = new StringBuffer()
 			def sipp = "sipp -s ${params.phoneNumber} 10.98.2.54 -i 10.98.2.250 -sn uac -r ${params.cps} -m ${params.maxCount} -d ${params.delay}".execute()
 			sipp.consumeProcessOutput(sout, serr)
-			sipp.waitForOrKill(10000)
+			sipp.waitForProcessOutput(sout)
 			def output = println "out > $sout error > $serr"
 			//println sipp
 			[view_data:sout]
