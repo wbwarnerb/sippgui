@@ -82,7 +82,7 @@
 	</head>
 	<body>
 		<p>Output:</p>
-		<div aligh="left" style="background" : $000000; color : #ffffff; padding: 4px; width : 600px; height : 250px; overflow : auto; ">
+		<div align="left" style="background" : $000000; color : #ffffff; padding: 4px; width : 600px; height : 250px; overflow : auto; ">
 		<p>${view_data}</p>
 		</div>
 	</body>

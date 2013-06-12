@@ -92,7 +92,7 @@
 		<p>Calls Per Second:</p>
 		<g:field name="cps"/>
 		<p>Max Calls:</p>
-		<g:field name="max"/>
+		<g:field name="maxCount"/>
 		<p>How Long to Hold Audio Open (ms):</p>
 		<g:field name="delay"/>
 		<g:actionSubmit value="Place Call" action="placeCall"/>
