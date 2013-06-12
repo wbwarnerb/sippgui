@@ -85,10 +85,15 @@
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p>phone number:</p>
 		<g:field name="phoneNumber"/>
+		<p>Environment:</p>
 		<g:field name="environment"/>
+		<p>Scenario File:</p>
 		<g:field name="scenarioFile"/>
+		<p>Calls Per Second:</p>
 		<g:field name="cps"/>
+		<p>Max Calls:</p>
 		<g:field name="max"/>
+		<p>How Long to Hold Audio Open (ms):</p>
 		<g:field name="delay"/>
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>

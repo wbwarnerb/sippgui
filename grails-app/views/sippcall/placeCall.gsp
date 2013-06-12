@@ -82,6 +82,6 @@
 	</head>
 	<body>
 		<p>${ view_data }</p>
-		<p>${view_data2 } </p>
+	
 	</body>
 </html>

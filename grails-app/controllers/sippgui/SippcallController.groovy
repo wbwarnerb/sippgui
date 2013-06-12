@@ -10,7 +10,7 @@ class SippcallController {
 			sipp.waitForOrKill(10000)
 			def output = println "out > $sout error > $serr"
 			//println sipp
-			[view_data:sipp.text, view_data2:output ]
+			[view_data:output]
 		}
 		else render "No phone number"
 	}
