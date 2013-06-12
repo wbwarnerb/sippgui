@@ -81,7 +81,8 @@
 		</style>
 	</head>
 	<body>
-		<p>${ view_data }</p>
+		<p>Output:</p>
+		<p>${view_data}</p>
 	
 	</body>
 </html>
