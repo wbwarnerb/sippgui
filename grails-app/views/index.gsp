@@ -82,7 +82,7 @@
 	</head>
 	<body>
 		<P>This is a GUI for the SIPP tool</P>
-		<g:form name="sippForm" controller="sippgui" action="placeCall">
+		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p>phone number:</p>
 		<g:field name="phoneNumber"/>
 		<p>Environment:</p>
