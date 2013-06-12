@@ -84,17 +84,13 @@
 		<P>This is a GUI for the SIPP tool</P>
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p>phone number:</p>
-		<g:field name="phoneNumber"/>
-		<p>Environment:</p>
-		<g:field name="environment"/>
-		<p>Scenario File:</p>
-		<g:field name="scenarioFile"/>
+		<g:field name="phoneNumber" value="12132830920"/>
 		<p>Calls Per Second:</p>
-		<g:field name="cps"/>
+		<g:field name="cps" value="1"/>
 		<p>Max Calls:</p>
-		<g:field name="maxCount"/>
+		<g:field name="maxCount" value="1"/>
 		<p>How Long to Hold Audio Open (ms):</p>
-		<g:field name="delay"/>
+		<g:field name="delay" value="1200"/>
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>
 	</body>
