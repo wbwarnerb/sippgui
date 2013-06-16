@@ -94,12 +94,14 @@
 
 	<div align="left">
 	<h3>SIP Output:</h3><p>
+	<div align="center">
 	<div align="center" style="background : #000000; color : #ffffff; padding : 4px; width : 90%; height : 250px; overflow : auto; ">
 			<p>
 			Sip Output, including the termination of the sip call to notify when the test is done, will be populated here.
 			</p>
 			<p>
 		</div>
+	</div>
 		</div>
 	</body>
 </html>
