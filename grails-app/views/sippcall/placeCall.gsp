@@ -81,12 +81,22 @@
 		</style>
 	</head>
 	<body>
-		<div align="right">
-		<p>Output:</p>
-		<div align="left" style="background : #000000; color : #ffffff; padding: 4px; width : 600px; height : 250px; overflow : auto; ">
-		<p>${view_data}</p>
-		</div>
-		</div>
+	<div align="left"padding : 4px; width : 600px; height : 850px; overflow : auto;>
+		<h3>Integration Server Performance (CPU, Memory, Disk IO)</h3>
 
+			<div id="mydiv">
+			<iframe id="frame" src="http://qaload1.ifn.com/cacti/graph_view.php?action=tree&tree_id=2" width="100%" height="700">
+			
+   </iframe></div>
+
+
+	</div>  
+
+	<div align="right">
+	<h3>SIP Output:</h3><p>
+
+			
+			<p>
+		</div>
 	</body>
 </html>
