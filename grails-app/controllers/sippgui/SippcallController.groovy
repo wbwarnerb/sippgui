@@ -9,7 +9,7 @@ class SippcallController {
 
 			runAsync{
 			
-			println sipp.text
+			//println sipp.text
 			[view_data:sipp]
 			}
 		}
