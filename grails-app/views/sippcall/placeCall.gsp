@@ -82,7 +82,8 @@
 	</head>
 	<body>
 	<div align="left"padding : 4px; width : 600px; height : 850px; overflow : auto;>
-		<h3>Integration Server Performance (CPU, Memory, Disk IO)</h3>
+			<p> <g:link controller="sippcall">HOME</g:link></p>
+		<h4>Integration Server Performance (CPU, Memory, Disk IO)</h4>
 
 			<div id="mydiv">
 			<iframe id="frame" src="http://qaload1.ifn.com/cacti/graph_view.php?action=tree&tree_id=2" width="100%" height="700">
