@@ -82,7 +82,7 @@
 	</head>
 	<body>
 	<div align="left"padding : 4px; width : 600px; height : 850px; overflow : auto;>
-			<p> <g:link controller="sippcall">HOME</g:link></p>
+			<p> <g:link url="/">HOME</g:link></p>
 		<h4>Integration Server Performance (CPU, Memory, Disk IO)</h4>
 
 			<div id="mydiv">
