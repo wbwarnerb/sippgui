@@ -89,7 +89,7 @@
 		<g:select name="cps" from="${1..30}" value="1"
           noSelection="['':'-Choose your CPS -']"/>
 		<p>Max Calls:</p>
-		<g:select name="maxCount" from="${1..3000}" value="1"/>
+		<g:select name="maxCount" from="${1..3000}" value="2"/>
 		<p>How Long to Hold Audio Open (ms):</p>
 		<g:select name="delay" from="${1200..5000}" value="1200"
           noSelection="['':'-Choose the delay -']"/>
