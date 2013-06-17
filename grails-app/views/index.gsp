@@ -86,11 +86,13 @@
 		<p>phone number:</p>
 		<g:field name="phoneNumber" value="12132830920"/>
 		<p>Calls Per Second:</p>
-		<g:field name="cps" value="1"/>
+		<g:select name="cps" from="${1..30}" value="1"
+          noSelection="['':'-Choose your CPS -']"/>
 		<p>Max Calls:</p>
 		<g:field name="maxCount" value="1"/>
 		<p>How Long to Hold Audio Open (ms):</p>
-		<g:field name="delay" value="1200"/>
+		<g:select name="delay" from="${1200..5000}" value="1200"
+          noSelection="['':'-Choose the delay -']"/>
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>
 	</body>
