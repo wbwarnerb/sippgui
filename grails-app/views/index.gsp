@@ -94,12 +94,8 @@
 		<g:select name="delay" from="${1200..5000}" value="1200"
           noSelection="['':'-Choose the delay -']"/>
           <p>Scenario: </p>
-          <select name="scenario">
-          	<option value="-sn uac">Built In UAC</option>
-  			<option value="-sf codec_speex.xml">Codec SPEEX</option>
- 			 <option value="-sf codec_g729.xml">Codec G729</option>
- 			 <option value="-sf carrier_sprint.xml">Carrier Sprint</option>
-			</select>
+          <g:select name="scenario" from ="${['-sn uac', 'Codec SPEEX', 'Codec G729', 'Carrier Sprint'] }"
+        	value = "${['-sn uac'] }" />
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>
 	</body>
