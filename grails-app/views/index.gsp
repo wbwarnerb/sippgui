@@ -81,7 +81,7 @@
 		</style>
 	</head>
 	<body>
-		<P>This is a GUI for the SIPP tool</P>
+		<P>This is a GUI for the SIPP tool - it only dials Integration:</P>
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p>phone number:</p>
 		<g:field name="phoneNumber" value="12132830920"/>
@@ -93,6 +93,13 @@
 		<p>How Long to Hold Audio Open (ms):</p>
 		<g:select name="delay" from="${1200..5000}" value="1200"
           noSelection="['':'-Choose the delay -']"/>
+          <p>Scenario: </p>
+          <select name="scenario">
+          	<option value="-sn uac">Built In UAC</option>
+  			<option value="-sf codec_speex.xml">Codec SPEEX</option>
+ 			 <option value="-sf codec_g729.xml">Codec G729</option>
+ 			 <option value="-sf carrier_sprint.xml">Carrier Sprint</option>
+			</select>
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>
 	</body>
