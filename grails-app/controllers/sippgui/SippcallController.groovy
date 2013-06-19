@@ -35,7 +35,7 @@ class SippcallController {
 	
 	def stopUas() {
 		
-					def ksipp = "pkill sipp".execute()
+					def ksipp = "pkill -9 sipp".execute()
 //					def sippcheck = "ps -A | grep sipp".execute()
 		
 				}
