@@ -84,12 +84,13 @@
 	<table>
 		<tr>
 			<td>
-
-	
-
-		<g:form name="sippForm" controller="sippcall" action="placeCall">
-		<p><h3>Phone number:</h3></p>
-		<g:select name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
+			<p><h3>A SIPp UAS server has started on 10.98.2.250:5080</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+		<p><h3><font color="#0066CC">Place SIPp call to SIP UAS</font></h3>
+		<g:form name="sippForm" controller="sippcall" action="placeCallUas">
 		<p><h3>Calls Per Second:</h3></p>
 		<g:select name="cps" from="${1..30}" value="1"
           noSelection="['':'-Choose your CPS -']"/>
@@ -101,12 +102,12 @@
           <p><h3>Scenario:</h3> </p>
           <g:select name="scenario" from ="${['uac.xml', 'codec_speex.xml', 'codec_g729.xml', 'carrier_sprint.xml'] }"
         	value = "uac.xml" />
-		<g:actionSubmit value="Place Call" action="placeCall"/>
+		<g:actionSubmit value="Place Call to UAS" action="placeCallUas"/>
 		</g:form>
 				</td>
 				
 		<td>
-		<h2>Stop UAS</h2>
+		<p><h3><font color="#0066CC">Stop UAS</font></h3></p>
 		<g:form name="uasForm" controller="sippcall" action="stopUas">
         <g:actionSubmit value="Stop UAS" action="stopUas"/>
 		</g:form>

@@ -15,6 +15,18 @@ class SippcallController {
 		}
 		else render "No phone number"
 	}
+	
+	def placeCallUas() {
+			def sipp = "sipp -r ${params.cps} -d ${params.delay} -sf ${params.scenario} -p 5080 10.98.2.250".execute()
+			
+
+			runAsync{
+			
+			[view_data:sipp]
+			}
+		}
+
+	
 	def startUas() {
 
 			def sipp = "sipp -sn uas -d 0 10.98.2.250:5080".execute()
