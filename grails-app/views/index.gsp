@@ -90,15 +90,13 @@
 		<p/>
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p><h3>Phone number:</h3></p>
-		<g:select name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
+		<g:select name="phoneNumber" from = "${['12132830920', '12132830912', '12132830591', '13237549121'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
 		<p><h3>Calls Per Second:</h3></p>
-		<g:select name="cps" from="${1..30}" value="1"
-          noSelection="['':'-Choose your CPS -']"/>
+		<g:select name="cps" from="${1..30}" value="1"/>
 		<p><h3>Max Calls:</h3></p>
 		<g:select name="maxCount" from="${['1', '10', '50', '100', '500', '1000', '2000']}" value="1"/>
 		<p><h3>How Long to Hold Audio Open (ms):</h3></p>
-		<g:select name="delay" from="${['1200', '5000', '10000', '20000', '60000', '120000']}" value="1000"
-          noSelection="['':'-Choose the delay -']"/>
+		<g:select name="delay" from="${['1200', '5000', '10000', '20000', '60000', '120000']}" value="1000"/>
           <p><h3>Scenario:</h3> </p>
           <g:select name="scenario" from ="${['uac.xml', 'codec_speex.xml', 'codec_g729.xml', 'carrier_sprint.xml'] }"
         	value = "uac.xml" />
