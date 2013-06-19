@@ -86,19 +86,19 @@
 			<td>
 
 	
-		<P>This is a GUI for the SIPP tool - it only dials Integration:</P>
+
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
-		<p>phone number:</p>
+		<p><h3>Phone number:</h3></p>
 		<g:select name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
-		<p>Calls Per Second:</p>
+		<p><h3>Calls Per Second:</h3></p>
 		<g:select name="cps" from="${1..30}" value="1"
           noSelection="['':'-Choose your CPS -']"/>
-		<p>Max Calls:</p>
+		<p><h3>Max Calls:</h3></p>
 		<g:select name="maxCount" from="${['1', '10', '50', '100', '500', '1000', '2000']}" value="1"/>
-		<p>How Long to Hold Audio Open (ms):</p>
+		<p><h3>How Long to Hold Audio Open (ms):</h3></p>
 		<g:select name="delay" from="${['1000', '5000', '10000', '20000', '60000', '120000']}" value="1000"
           noSelection="['':'-Choose the delay -']"/>
-          <p>Scenario: </p>
+          <p><h3>Scenario:</h3> </p>
           <g:select name="scenario" from ="${['uac.xml', 'codec_speex.xml', 'codec_g729.xml', 'carrier_sprint.xml'] }"
         	value = "uac.xml" />
 		<g:actionSubmit value="Place Call" action="placeCall"/>
