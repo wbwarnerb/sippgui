@@ -81,8 +81,10 @@
 		</style>
 	</head>
 	<body>
-	<div padding:10px;>
-	
+	<table>
+		<tr>
+			<td>
+
 	
 		<P>This is a GUI for the SIPP tool - it only dials Integration:</P>
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
@@ -101,6 +103,9 @@
         	value = "uac.xml" />
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>
-		</div>
+				</td>
+		</tr>
+			
+	</table>	
 	</body>
 </html>
