@@ -39,7 +39,7 @@ class SippcallController {
 		
 					def ksipp = "pkill sipp".execute()
 					def sippcheck = "ps -A | grep sipp".execute()
-					assert sippcheck == null
+					assert sippcheck == ""
 		
 				}
 
