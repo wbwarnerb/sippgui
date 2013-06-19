@@ -31,7 +31,7 @@ class SippcallController {
 
 			def sipp = "sipp -sn uas -d 0 10.98.2.250:5080".execute()
 			def sippcheck = "ps -A | grep sipp".execute()
-			assert sippcheck.grep("sipp")
+			assert sippcheck.text.contains("sipp")
 
 		}
 	
@@ -39,7 +39,7 @@ class SippcallController {
 		
 					def ksipp = "pkill sipp".execute()
 					def sippcheck = "ps -A | grep sipp".execute()
-					assert !sippcheck.grep("sipp") 
+					assert !sippcheck.text.contains(null)
 		
 				}
 
