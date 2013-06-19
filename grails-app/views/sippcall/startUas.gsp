@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>SIPp - Home</title>
+		<title>SIPp - UAS</title>
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
@@ -86,8 +86,7 @@
 			<td>
 
 	
-		<p><h3><font color="#0066CC">Place SIPp Load</font></h3></p>
-		<p/>
+
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p><h3>Phone number:</h3></p>
 		<g:select name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
@@ -107,12 +106,9 @@
 				</td>
 				
 		<td>
-		<p><h3><font color="#0066CC">Start SIPp UAS</font></h3></p>
-		<g:form name="uasForm" controller="sippcall" action="startUas">
-		 <p><h3>Scenario:</h3> </p>
-          <g:select name="uasScenario" from ="${['uas.xml'] }"
-        	value = "uas.xml" />
-        <g:actionSubmit value="Start UAS" action="startUas"/>
+		<h2>Stop UAS</h2>
+		<g:form name="uasForm" controller="sippcall" action="stopUas">
+        <g:actionSubmit value="Stop UAS" action="stopUas"/>
 		</g:form>
 		</td>				
 		</tr>

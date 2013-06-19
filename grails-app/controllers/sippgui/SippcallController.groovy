@@ -15,4 +15,10 @@ class SippcallController {
 		}
 		else render "No phone number"
 	}
+	def startUas() {
+
+			def sipp = "sipp -sn uas -d 0 10.98.2.250:5080".execute()
+
+		}
+
 }
