@@ -81,22 +81,26 @@
 		</style>
 	</head>
 	<body>
+	<div padding:10px;>
+	
+	
 		<P>This is a GUI for the SIPP tool - it only dials Integration:</P>
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p>phone number:</p>
-		<g:field name="phoneNumber" value="12132830920"/>
+		<g:field name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
 		<p>Calls Per Second:</p>
 		<g:select name="cps" from="${1..30}" value="1"
           noSelection="['':'-Choose your CPS -']"/>
 		<p>Max Calls:</p>
 		<g:select name="maxCount" from="${['1', '10', '50', '100', '500', '1000', '2000']}" value="1"/>
 		<p>How Long to Hold Audio Open (ms):</p>
-		<g:select name="delay" from="${1200..5000}" value="1200"
+		<g:select name="delay" from="${['1000', '5000', '10000', '20000', '60000', '120000'}" value="1000"
           noSelection="['':'-Choose the delay -']"/>
           <p>Scenario: </p>
           <g:select name="scenario" from ="${['uac.xml', 'codec_speex.xml', 'codec_g729.xml', 'carrier_sprint.xml'] }"
         	value = "uac.xml" />
 		<g:actionSubmit value="Place Call" action="placeCall"/>
 		</g:form>
+		</div>
 	</body>
 </html>
