@@ -87,7 +87,7 @@
 		<P>This is a GUI for the SIPP tool - it only dials Integration:</P>
 		<g:form name="sippForm" controller="sippcall" action="placeCall">
 		<p>phone number:</p>
-		<g:field name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
+		<g:select name="phoneNumber" from = "${['12132830920'] }" value="12132830920" noSelection="['':'-Choose the phone number -']"/>
 		<p>Calls Per Second:</p>
 		<g:select name="cps" from="${1..30}" value="1"
           noSelection="['':'-Choose your CPS -']"/>
